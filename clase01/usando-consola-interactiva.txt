@@ -1,0 +1,20 @@
+irb (Interactive Ruby Shell)
+
+$ irb
+irb(main):001:0> 2 + 3
+=> 5
+irb(main):002:0> puts "Lorgio"
+Lorgio
+=> nil
+irb(main):003:0> 45 / 9
+=> 5
+irb(main):004:0> puts "LoRgIo".downcase
+lorgio
+=> nil
+irb(main):005:0> puts "lorgio".capitalize
+Lorgio
+=> nil
+irb(main):006:0> 2**3
+=> 8
+irb(main):007:0> quit
+
