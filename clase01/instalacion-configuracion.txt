@@ -1,0 +1,10 @@
+##### Instalacion en linux #####
+
+Instalando la version 2.0.0 de ruby
+$ sudo apt-get install ruby2.0.0
+
+Validando la instalacion
+$ ruby -v
+
+
+
