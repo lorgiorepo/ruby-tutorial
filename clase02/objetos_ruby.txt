@@ -1,0 +1,22 @@
+## Objetos numericos enteros y flotantes: Los objetos numericos pertenecen a la clase Fixnum, todo lo que exeda el rango pertenecera a la clase Bignum. Los numeros que admiten decimales pertenecen a la clase Float.
+
+$ irb
+irb(main):001:0> 12.class
+=> Fixnum
+irb(main):002:0> -12.class
+=> Fixnum
+irb(main):003:0> 123213213213131232313123123232.class
+=> Bignum
+irb(main):004:0> 0xf23.class
+=> Fixnum
+irb(main):005:0> 0b1011.class
+=> Fixnum
+irb(main):006:0> 0.3.class
+=> Float
+irb(main):007:0> 4.0e6.class
+=> Float
+irb(main):008:0> 
+
+
+
+
