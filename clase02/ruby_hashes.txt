@@ -1,0 +1,24 @@
+$ irb
+irb(main):001:0> hashes_lorgio.class
+NameError: undefined local variable or method `hashes_lorgio' for main:Object
+	from (irb):1
+	from /usr/bin/irb:12:in `<main>'
+irb(main):002:0> hashes_lorgio = {'nombre'=>'Lorgio','apellido'=>'Trinidad'}
+=> {"nombre"=>"Lorgio", "apellido"=>"Trinidad"}
+irb(main):003:0> hashes_lorgio.class
+=> Hash
+irb(main):004:0> hashes_lorgio['nombre']
+=> "Lorgio"
+irb(main):005:0> hashes_lorgio.keys
+=> ["nombre", "apellido"]
+irb(main):006:0> hashes_lorgio.values
+=> ["Lorgio", "Trinidad"]
+irb(main):007:0> hashes_lorgio.length
+=> 2
+irb(main):008:0> hashes_lorgio['sexo']='Masculino'
+=> "Masculino"
+irb(main):009:0> hashes_lorgio
+=> {"nombre"=>"Lorgio", "apellido"=>"Trinidad", "sexo"=>"Masculino"}
+irb(main):010:0> hashes_lorgio.clear
+=> {}
+irb(main):011:0>
