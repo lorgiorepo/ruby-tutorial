@@ -1,0 +1,64 @@
+## En estos arreglos es posible almacenar cadena de caracteres (String), numeros (Bignum, Fixnum y Float), otros arreglos (Array).
+No es necesario que sean del mismo tipo de datos.
+
+$ irb
+irb(main):001:0> arreglo_principal.class
+NameError: undefined local variable or method `arreglo_principal' for main:Object
+	from (irb):1
+	from /usr/bin/irb:12:in `<main>'
+irb(main):002:0> arreglo_principal = []
+=> []
+irb(main):003:0> arreglo_principal.class
+=> Array
+irb(main):004:0> arreglo_principal = ["1", "2", "3", "4"]
+=> ["1", "2", "3", "4"]
+irb(main):005:0> arreglo_principal[1]
+=> "2"
+irb(main):006:0> arreglo_principal << "5"
+=> ["1", "2", "3", "4", "5"]
+irb(main):007:0> arreglo_principal.clear
+=> []
+irb(main):008:0> arreglo_principal = ["a", "b", "c", "d"]
+=> ["a", "b", "c", "d"]
+irb(main):009:0> puts arreglo_principal
+a
+b
+c
+d
+=> nil
+irb(main):010:0> arreglo_principal.reverse
+=> ["d", "c", "b", "a"]
+irb(main):011:0> arreglo_principal << "z" 
+=> ["a", "b", "c", "d", "z"]
+irb(main):012:0> arreglo_principal.sort
+=> ["a", "b", "c", "d", "z"]
+irb(main):013:0> arreglo_principal << "e"
+=> ["a", "b", "c", "d", "z", "e"]
+irb(main):014:0> arreglo_principal.sort
+=> ["a", "b", "c", "d", "e", "z"]
+irb(main):015:0> arreglo_principal << "b"
+=> ["a", "b", "c", "d", "z", "e", "b"]
+irb(main):016:0> arreglo_principal.uniq
+=> ["a", "b", "c", "d", "z", "e"]
+irb(main):017:0> arreglo_principal.delete_at(1)
+=> "b"
+irb(main):018:0> arreglo_principal
+=> ["a", "c", "d", "z", "e", "b"]
+irb(main):019:0> arreglo_principal << "z"
+=> ["a", "c", "d", "z", "e", "b", "z"]
+irb(main):020:0> arreglo_principal.detele("z")
+NoMethodError: undefined method `detele' for ["a", "c", "d", "z", "e", "b", "z"]:Array
+	from (irb):20
+	from /usr/bin/irb:12:in `<main>'
+irb(main):021:0> arreglo_principal.detele(4)
+NoMethodError: undefined method `detele' for ["a", "c", "d", "z", "e", "b", "z"]:Array
+	from (irb):21
+	from /usr/bin/irb:12:in `<main>'
+irb(main):022:0> arreglo_principal.delete("z")
+=> "z"
+irb(main):023:0> arreglo_principal
+=> ["a", "c", "d", "e", "b"]
+irb(main):024:0> arreglo_principal + [1, 23.2, 4]
+=> ["a", "c", "d", "e", "b", 1, 23.2, 4]
+irb(main):025:0>
+
