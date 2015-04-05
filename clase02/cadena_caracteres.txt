@@ -1,0 +1,27 @@
+$ irb
+irb(main):001:0> "Lorgio".class
+=> String
+irb(main):002:0> saludo = 'hola'
+=> "hola"
+irb(main):003:0> sujeto = 'Amigo'
+=> "Amigo"
+irb(main):004:0> saludo + ' ' + suejto
+NameError: undefined local variable or method `suejto' for main:Object
+	from (irb):4
+	from /usr/bin/irb:12:in `<main>'
+irb(main):005:0> saludo + ' ' + sujeto
+=> "hola Amigo"
+irb(main):006:0> 'chao '*3
+=> "chao chao chao "
+irb(main):007:0> saludo.reverse
+=> "aloh"
+irb(main):008:0> saludo.capitalize
+=> "Hola"
+irb(main):009:0> saludo.upcase
+=> "HOLA"
+irb(main):010:0> saludo.length
+=> 4
+irb(main):011:0> saludo[0]
+=> "h"
+irb(main):012:0> 
+
